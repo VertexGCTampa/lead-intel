@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vertex leads</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light;
+  --bg: #F3F5F4;
+  --surface: #FFFFFF;
+  --ink: #1D2733;
+  --muted: #5E6A75;
+  --rule: #D6DBD8;
+  --pursue: #2F6B4F;
+  --watch: #A86A12;
+  --low: #7A8591;
+  --excluded: #A9B0B6;
+  --focus: #2B5FA8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #151A1F;
+    --surface: #1D242B;
+    --ink: #E3E7EA;
+    --muted: #98A3AD;
+    --rule: #2E3740;
+    --pursue: #5FAF87;
+    --watch: #D69A3C;
+    --low: #8C97A1;
+    --excluded: #5B656E;
+    --focus: #7EA8E6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.45 "Barlow", "Segoe UI", system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header { padding: 28px 24px 8px; max-width: 1180px; margin: 0 auto; }
+h1 { font-size: 30px; font-weight: 700; margin: 0; letter-spacing: -0.01em; }
+.updated { color: var(--muted); margin: 2px 0 0; }
+
+.tiers { display: flex; gap: 8px; margin: 22px 0 0; flex-wrap: wrap; }
+.tier-tab {
+  border: 1px solid var(--rule); background: var(--surface); color: var(--ink);
+  border-radius: 6px; padding: 8px 16px 8px 12px; cursor: pointer; font: inherit;
+  display: flex; align-items: baseline; gap: 10px; border-left-width: 5px;
+}
+.tier-tab b { font-size: 26px; font-weight: 700; line-height: 1; }
+.tier-tab[data-tier="pursue"] { border-left-color: var(--pursue); }
+.tier-tab[data-tier="watch"] { border-left-color: var(--watch); }
+.tier-tab[data-tier="low"] { border-left-color: var(--low); }
+.tier-tab[data-tier="excluded"] { border-left-color: var(--excluded); }
+.tier-tab[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+.controls {
+  max-width: 1180px; margin: 0 auto; padding: 16px 24px;
+  display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+}
+.controls select, .controls input[type="search"], .controls button {
+  font: inherit; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 7px 10px;
+}
+.controls input[type="search"] { flex: 1 1 220px; min-width: 180px; }
+.controls label { display: flex; gap: 6px; align-items: center; color: var(--muted); }
+.controls button { cursor: pointer; }
+
+main { max-width: 1180px; margin: 0 auto; padding: 0 24px 60px; }
+.count { color: var(--muted); margin: 0 0 8px; }
+.lead {
+  background: var(--surface); border: 1px solid var(--rule); border-left: 5px solid var(--low);
+  border-radius: 6px; margin-bottom: 8px;
+}
+.lead[data-tier="pursue"] { border-left-color: var(--pursue); }
+.lead[data-tier="watch"] { border-left-color: var(--watch); }
+.lead[data-tier="excluded"] { border-left-color: var(--excluded); opacity: 0.8; }
+.lead-row {
+  display: grid; grid-template-columns: 88px 1fr 160px 130px; gap: 16px;
+  padding: 14px 16px; align-items: start;
+}
+.score { font-size: 28px; font-weight: 700; line-height: 1; }
+.score small { display: block; font-size: 12px; font-weight: 500; color: var(--muted); margin-top: 4px; text-transform: capitalize; }
+.title { font-weight: 600; font-size: 17px; margin: 0; }
+.title a { color: inherit; }
+.desc { margin: 2px 0 6px; color: var(--muted); max-width: 72ch; }
+.meta { font-size: 14px; color: var(--muted); }
+.meta span + span::before { content: ", "; }
+.new { display: inline-block; font-size: 12px; font-weight: 600; color: var(--surface); background: var(--pursue);
+  border-radius: 4px; padding: 0 6px; margin-left: 6px; vertical-align: 2px; }
+.facts { font-size: 14px; }
+.facts div { color: var(--muted); }
+.facts strong { color: var(--ink); font-weight: 600; }
+.status select { width: 100%; font: inherit; padding: 5px 6px; border-radius: 6px;
+  border: 1px solid var(--rule); background: var(--surface); color: var(--ink); }
+details { border-top: 1px solid var(--rule); padding: 0 16px; }
+details summary { cursor: pointer; padding: 8px 0; color: var(--muted); font-size: 14px; }
+.detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 6px 24px;
+  padding: 0 0 14px; font-size: 14px; }
+.detail-grid dt { color: var(--muted); }
+.detail-grid dd { margin: 0 0 6px; }
+.flag { color: var(--watch); }
+.empty { padding: 40px 0; color: var(--muted); }
+
+@media (max-width: 760px) {
+  .lead-row { grid-template-columns: 72px 1fr; gap: 12px; }
+  .score small { font-size: 11px; }
+  .facts, .status { grid-column: 2; }
+  .score { font-size: 22px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Vertex leads</h1>
+  <p class="updated">Updated __UPDATED__</p>
+  <div class="tiers" role="group" aria-label="Filter by tier"></div>
+</header>
+
+<div class="controls">
+  <select id="sector" aria-label="Business unit">
+    <option value="">Commercial and residential</option>
+    <option value="commercial">Commercial</option>
+    <option value="residential">Residential</option>
+  </select>
+  <select id="category" aria-label="Source type">
+    <option value="">Bids and planning</option>
+    <option value="bids">Bids</option>
+    <option value="planning">Planning</option>
+  </select>
+  <select id="county" aria-label="County">
+    <option value="">Both counties</option>
+    <option value="Hillsborough">Hillsborough</option>
+    <option value="Pinellas">Pinellas</option>
+  </select>
+  <input id="q" type="search" placeholder="Search name, address, owner, architect" aria-label="Search leads">
+  <label><input id="hidePassed" type="checkbox" checked> Hide passed</label>
+  <label><input id="newOnly" type="checkbox"> New this week</label>
+  <button id="export" type="button">Download CSV</button>
+</div>
+
+<main>
+  <p class="count" aria-live="polite"></p>
+  <div id="list"></div>
+</main>
+
+<script>
+const LEADS = /*__LEADS__*/[];
+const LAST_RUN = "__LAST_RUN__";
+const STATUSES = ["New", "Reviewing", "Pursuing", "Passed", "Won", "Lost"];
+const TIERS = [["pursue", "Pursue"], ["watch", "Watch"], ["low", "Low"], ["excluded", "Excluded"]];
+const STORE_KEY = "vertex-lead-status";
+
+let statuses = {};
+try { statuses = JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch (e) { statuses = {}; }
+function saveStatus(key, value) {
+  statuses[key] = value;
+  try { localStorage.setItem(STORE_KEY, JSON.stringify(statuses)); } catch (e) {}
+}
+
+let activeTier = "pursue";
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money = v => v ? "$" + Math.round(v).toLocaleString() : "";
+const label = s => String(s || "").replace(/_/g, " ");
+
+function renderTabs() {
+  const box = document.querySelector(".tiers");
+  box.innerHTML = TIERS.map(([id, name]) => {
+    const n = LEADS.filter(l => l.tier === id).length;
+    return `<button class="tier-tab" data-tier="${id}" aria-pressed="${id === activeTier}"><b>${n}</b>${name}</button>`;
+  }).join("");
+  box.querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
+    activeTier = b.dataset.tier; renderTabs(); render();
+  }));
+}
+
+function filtered() {
+  const sector = document.getElementById("sector").value;
+  const category = document.getElementById("category").value;
+  const county = document.getElementById("county").value;
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const hidePassed = document.getElementById("hidePassed").checked;
+  const newOnly = document.getElementById("newOnly").checked;
+  return LEADS.filter(l =>
+    l.tier === activeTier &&
+    (!sector || l.sector === sector) &&
+    (!category || l.category === category) &&
+    (!county || l.county === county) &&
+    (!hidePassed || statuses[l.key] !== "Passed") &&
+    (!newOnly || l.first_seen === LAST_RUN) &&
+    (!q || [l.title, l.address, l.city, l.owner, l.applicant, l.design_team, l.description, l.reference]
+      .join(" ").toLowerCase().includes(q))
+  ).sort((a, b) => b.score - a.score);
+}
+
+function keyDate(l) {
+  if (l.due_date) return `<div>Due <strong>${esc(l.due_date)}</strong></div>`;
+  if (l.hearing_date) return `<div>Hearing <strong>${esc(l.hearing_date)}</strong></div>`;
+  return "";
+}
+function sizeLine(l) {
+  const bits = [];
+  if (l.est_value) bits.push(`<strong>${money(l.est_value)}</strong>${l.value_is_estimate ? " est." : ""}`);
+  if (l.sqft) bits.push(`<strong>${Math.round(l.sqft).toLocaleString()}</strong> sq ft`);
+  if (l.units) bits.push(`<strong>${l.units}</strong> units`);
+  return bits.length ? `<div>${bits.join("<br>")}</div>` : "";
+}
+
+function leadHtml(l) {
+  const status = statuses[l.key] || "New";
+  const isNew = l.first_seen === LAST_RUN;
+  const title = l.url ? `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.title)}</a>` : esc(l.title);
+  const meta = [l.address, l.city, l.source_name].filter(Boolean).map(m => `<span>${esc(m)}</span>`).join("");
+  const why = (l.excluded_because && l.excluded_because.length) ? l.excluded_because : l.reasons || [];
+  const rows = [
+    ["Why", why.join(", ")],
+    ["Check", (l.flags || []).join(", ")],
+    ["Type", `${label(l.project_type)}, ${label(l.stage)}`],
+    ["Reference", l.reference],
+    ["Owner", l.owner],
+    ["Applicant", l.applicant],
+    ["Design team", l.design_team],
+    ["First seen", l.first_seen],
+    ["History", (l.history || []).map(h => `${h.date}: ${label(h.stage)} (${h.source})`).join("; ")],
+  ].filter(([, v]) => v);
+  return `<article class="lead" data-tier="${l.tier}">
+    <div class="lead-row">
+      <div class="score">${l.score}<small>${label(l.sector)}</small></div>
+      <div>
+        <p class="title">${title}${isNew ? '<span class="new">New</span>' : ""}</p>
+        ${l.description ? `<p class="desc">${esc(l.description)}</p>` : ""}
+        <div class="meta">${meta}</div>
+      </div>
+      <div class="facts">${keyDate(l)}${sizeLine(l)}</div>
+      <div class="status"><select data-key="${l.key}" aria-label="Status for ${esc(l.title)}">
+        ${STATUSES.map(s => `<option${s === status ? " selected" : ""}>${s}</option>`).join("")}
+      </select></div>
+    </div>
+    <details><summary>Details</summary>
+      <dl class="detail-grid">${rows.map(([k, v]) =>
+        `<div><dt>${k}</dt><dd${k === "Check" ? ' class="flag"' : ""}>${esc(v)}</dd></div>`).join("")}</dl>
+    </details>
+  </article>`;
+}
+
+function render() {
+  const list = filtered();
+  const tierName = TIERS.find(t => t[0] === activeTier)[1];
+  document.querySelector(".count").textContent = `${list.length} ${tierName.toLowerCase()} leads shown`;
+  const box = document.getElementById("list");
+  box.innerHTML = list.length ? list.map(leadHtml).join("")
+    : `<p class="empty">No ${tierName.toLowerCase()} leads match these filters. Clear the search or switch tiers.</p>`;
+  box.querySelectorAll("select[data-key]").forEach(s =>
+    s.addEventListener("change", () => { saveStatus(s.dataset.key, s.value); if (s.value === "Passed") render(); }));
+}
+
+function exportCsv() {
+  const cols = ["tier", "score", "status", "sector", "category", "title", "project_type", "stage", "address", "city",
+    "county", "est_value", "sqft", "units", "due_date", "hearing_date", "owner", "applicant", "design_team",
+    "reference", "source_name", "url", "first_seen"];
+  const rows = LEADS.filter(l => l.tier !== "excluded").map(l =>
+    cols.map(c => c === "status" ? (statuses[l.key] || "New") : l[c] ?? "")
+        .map(v => `"${String(v).replace(/"/g, '""')}"`).join(","));
+  const blob = new Blob([cols.join(",") + "\n" + rows.join("\n")], {type: "text/csv"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = `vertex-leads-${LAST_RUN}.csv`; a.click();
+}
+
+["sector", "category", "county", "hidePassed", "newOnly"].forEach(id =>
+  document.getElementById(id).addEventListener("change", render));
+document.getElementById("q").addEventListener("input", render);
+document.getElementById("export").addEventListener("click", exportCsv);
+renderTabs(); render();
+</script>
+</body>
+</html>
