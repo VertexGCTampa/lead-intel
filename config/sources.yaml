@@ -1,0 +1,215 @@
+# Lead sources.
+#
+# kind:
+#   listing_page  - render the page in a browser, send its text to Claude to pull out each opportunity
+#   pdf_index     - find agenda/newsletter PDFs linked from a page, read the new ones
+#
+# status:
+#   confirmed - URL seen on the agency's own site during research
+#   verify    - agency confirmed, exact URL not; check it, then set enabled: true
+
+sources:
+
+  # ---------- Bid portals: OpenGov ----------
+  - id: stpete_bids
+    name: City of St. Petersburg bids
+    county: Pinellas
+    category: bids
+    kind: listing_page
+    url: https://procurement.opengov.com/portal/stpete
+    status: confirmed
+    enabled: true
+
+  - id: pinellas_county_bids
+    name: Pinellas County bids
+    county: Pinellas
+    category: bids
+    kind: listing_page
+    url: https://secure.procurenow.com/portal/pinellasfl
+    status: confirmed
+    enabled: true
+
+  - id: pinellas_schools_bids
+    name: Pinellas County Schools bids
+    county: Pinellas
+    category: bids
+    kind: listing_page
+    url: https://procurement.opengov.com/portal/pcsb
+    status: confirmed
+    enabled: true
+
+  - id: plant_city_bids
+    name: City of Plant City bids
+    county: Hillsborough
+    category: bids
+    kind: listing_page
+    url: https://procurement.opengov.com/portal/plantcitygov
+    status: confirmed
+    enabled: true
+
+  - id: tampa_purchasing_bids
+    name: City of Tampa purchasing bid schedule
+    county: Hillsborough
+    category: bids
+    kind: listing_page
+    url: https://tampa.gov/purchasing/info/bid-schedule
+    status: confirmed
+    enabled: true
+
+  - id: clearwater_bids
+    name: City of Clearwater bids
+    county: Pinellas
+    category: bids
+    kind: listing_page
+    url: VERIFY  # OpenGov portal linked from https://www.myclearwater.com/business/bid-information
+    status: verify
+    enabled: false
+
+  # ---------- Bid portals: other ----------
+  - id: tampa_construction_bids
+    name: City of Tampa construction project bids
+    county: Hillsborough
+    category: bids
+    kind: listing_page
+    url: https://www.tampa.gov/contract-administration/programs/construction-project-bidding
+    status: confirmed
+    enabled: true
+
+  - id: hillsborough_upcoming
+    name: Hillsborough County upcoming procurements
+    county: Hillsborough
+    category: bids
+    kind: listing_page
+    url: https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements
+    status: confirmed
+    enabled: true
+
+  - id: hillsborough_bids
+    name: Hillsborough County bids (Euna)
+    county: Hillsborough
+    category: bids
+    kind: listing_page
+    url: VERIFY  # Euna portal linked from https://hcfl.gov/procurement
+    status: verify
+    enabled: false
+
+  - id: largo_bids
+    name: City of Largo bids
+    county: Pinellas
+    category: bids
+    kind: listing_page
+    url: https://Largo.com/services/financial_center/bids_and_rfps.php
+    status: confirmed
+    enabled: true
+
+  - id: dunedin_bids
+    name: City of Dunedin bids
+    county: Pinellas
+    category: bids
+    kind: listing_page
+    url: https://www.dunedin.gov/City-Services/Business-Development/Doing-Business-with-the-City/Project-Bids-Proposals
+    status: confirmed
+    enabled: true
+
+  - id: tarpon_springs_bids
+    name: City of Tarpon Springs bids (Euna)
+    county: Pinellas
+    category: bids
+    kind: listing_page
+    url: VERIFY
+    status: verify
+    enabled: false
+
+  - id: safety_harbor_bids
+    name: City of Safety Harbor solicitations
+    county: Pinellas
+    category: bids
+    kind: listing_page
+    url: VERIFY  # "Solicitations" page on cityofsafetyharbor.com
+    status: verify
+    enabled: false
+
+  - id: st_pete_beach_bids
+    name: City of St. Pete Beach bids
+    county: Pinellas
+    category: bids
+    kind: listing_page
+    url: VERIFY
+    status: verify
+    enabled: false
+
+  - id: legal_notices_pinellas
+    name: Business Observer legal notices (Pinellas)
+    county: Pinellas
+    category: bids
+    kind: listing_page
+    url: VERIFY  # catches Oldsmar and other small towns that only advertise bids here
+    status: verify
+    enabled: false
+
+  # ---------- Planning agendas ----------
+  - id: tampa_cares
+    name: Tampa CARES newsletter
+    county: Hillsborough
+    category: planning
+    kind: pdf_index
+    url: https://www.tampa.gov/development-coordination/news-and-events
+    pdf_pattern: "tampa-cares.*\\.pdf"
+    max_new_docs: 1
+    status: confirmed
+    enabled: true
+
+  - id: pinellas_lpa
+    name: Pinellas County Local Planning Agency
+    county: Pinellas
+    category: planning
+    kind: pdf_index
+    url: https://pinellas.gov/boards-councils-and-committees/local-planning-agency/
+    pdf_pattern: "LPA-Agenda.*\\.pdf"
+    max_new_docs: 2
+    status: confirmed
+    enabled: true
+
+  - id: pinellas_boaa
+    name: Pinellas County Board of Adjustment and Appeals
+    county: Pinellas
+    category: planning
+    kind: pdf_index
+    url: https://pinellas.gov/boards-councils-and-committees/board-of-adjustments-and-appeals/
+    pdf_pattern: "BOAA-Agenda.*\\.pdf"
+    max_new_docs: 2
+    status: confirmed
+    enabled: true
+
+  - id: clearwater_cdb
+    name: Clearwater Community Development Board
+    county: Pinellas
+    category: planning
+    kind: pdf_index
+    url: https://www.myclearwater.com/communitydevelopmentboard
+    pdf_pattern: "cdb.*agenda.*\\.pdf"
+    max_new_docs: 2
+    status: verify  # agendas moved to Legistar in 2025; page may no longer link PDFs
+    enabled: true
+
+  - id: stpete_drc
+    name: St. Petersburg Development Review Commission
+    county: Pinellas
+    category: planning
+    kind: pdf_index
+    url: VERIFY  # DRC agenda index on stpete.org
+    pdf_pattern: "(?i)agenda.*\\.pdf"
+    max_new_docs: 1
+    status: verify
+    enabled: false
+
+  - id: hillsborough_zhm
+    name: Hillsborough County Zoning Hearing Master
+    county: Hillsborough
+    category: planning
+    kind: pdf_index
+    url: VERIFY  # "ZHM Agendas" link on the hcfl.gov ZHM hearing pages
+    pdf_pattern: "(?i)agenda.*\\.pdf"
+    max_new_docs: 1
+    status: verify
+    enabled: false

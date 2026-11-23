@@ -1,0 +1,67 @@
+# Vertex lead fit profile. Edit these numbers and lists to tune what the scanner keeps and ranks.
+
+counties: [Hillsborough, Pinellas]
+
+commercial:
+  min_value: 400000
+  max_value_private: 8000000
+  max_value_public: 4000000        # public work needs payment & performance bonds
+  near_line_margin: 0.15           # estimated values within 15% of a limit are kept and flagged
+  large_warehouse_sqft: 60000      # warehouses above this (or tilt-wall) are excluded; adjust to taste
+  type_points:
+    medical: 30
+    tenant_improvement: 25
+    office: 25
+    retail: 25
+    restaurant: 25
+    commercial_building: 25
+    small_industrial: 20
+    municipal_building: 20
+  excluded_types:
+    - site_civil
+    - service_contract
+    - supply
+    - large_warehouse
+    - multifamily
+    - hotel
+  exclude_single_trade: true
+
+residential:
+  custom_home_min_sqft: 2500
+  townhome_max_units: 19           # fewer than 20 units
+  type_points:
+    custom_home: 30
+    townhome: 30
+    duplex: 25
+  excluded_types:
+    - renovation
+    - addition
+    - condo
+    - production_subdivision
+    - multifamily
+  # ZIP codes that get a boost. Prefilled with South Tampa; edit freely.
+  priority_zips: ["33606", "33609", "33611", "33629"]
+
+stage_points:
+  planning: 25        # rezoning, site plan, lot split: no GC chosen yet
+  lease: 25           # signed lease means a build-out is coming
+  demolition: 20      # teardown, likely new home
+  lot_sale: 20
+  bid_open: 20
+  rfq: 20
+  permit: 15
+  variance: 10
+  news: 10
+  other: 0
+
+value_known_points: 15
+value_estimated_points: 5
+
+# Names you already work with. Any match in owner / applicant / architect fields adds points.
+relationships:
+  points: 20
+  names: []           # e.g. ["Example Architects", "Example Development LLC"]
+
+tiers:
+  pursue: 55
+  watch: 40
