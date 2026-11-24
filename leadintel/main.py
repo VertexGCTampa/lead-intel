@@ -7,6 +7,7 @@ import traceback
 from datetime import date
 from pathlib import Path
 
+import requests
 import yaml
 
 from . import dashboard, digest, store
@@ -31,12 +32,51 @@ def collect_listing(browser: Browser, source: dict) -> list[dict]:
 
 def collect_pdfs(browser: Browser, source: dict, seen: set[str]) -> list[dict]:
     page = browser.render(source["url"])
+    if source.get("doc_page_pattern"):
+        return _collect_via_doc_pages(browser, source, page, seen)
     pdfs = find_pdf_links(page["links"], source["url"], source["pdf_pattern"])
     new_pdfs = [p for p in pdfs if p not in seen][: source.get("max_new_docs", 1)]
     items = []
     for pdf_url in new_pdfs:
         text = pdf_text(pdf_url)
         for part in chunks(text):
+            items.extend(extract_items(part, source, pdf_url))
+        seen.add(pdf_url)
+    return items
+
+
+def _collect_via_doc_pages(browser: Browser, source: dict, page: dict, seen: set[str]) -> list[dict]:
+    """Index page links to one page per document, which links to the PDF (e.g. tampa.gov /document/...)."""
+    doc_pages = find_pdf_links(page["links"], source["url"], source["doc_page_pattern"])
+    new_pages = [d for d in doc_pages if d not in seen][: source.get("max_new_docs", 1)]
+    items = []
+    for doc_url in new_pages:
+        sub = browser.render(doc_url, wait_ms=1500)
+        for pdf_url in find_pdf_links(sub["links"], doc_url, source["pdf_pattern"])[:1]:
+            for part in chunks(pdf_text(pdf_url)):
+                items.extend(extract_items(part, source, pdf_url))
+        seen.add(doc_url)
+    return items
+
+
+def collect_legistar(source: dict, seen: set[str]) -> list[dict]:
+    """Agenda PDFs for one board, from the city's public Legistar data feed."""
+    resp = requests.get(
+        f"https://webapi.legistar.com/v1/{source['legistar_client']}/events",
+        params={
+            "$filter": f"EventBodyName eq '{source['legistar_body']}'",
+            "$orderby": "EventDate desc",
+            "$top": "6",
+        },
+        headers={"Accept": "application/json"},
+        timeout=60,
+    )
+    resp.raise_for_status()
+    agendas = [e["EventAgendaFile"] for e in resp.json() if e.get("EventAgendaFile")]
+    new_pdfs = [a for a in agendas if a not in seen][: source.get("max_new_docs", 1)]
+    items = []
+    for pdf_url in new_pdfs:
+        for part in chunks(pdf_text(pdf_url)):
             items.extend(extract_items(part, source, pdf_url))
         seen.add(pdf_url)
     return items
@@ -72,6 +112,8 @@ def run(only: str | None = None) -> None:
                     items = collect_listing(browser, source)
                 elif source["kind"] == "pdf_index":
                     items = collect_pdfs(browser, source, seen)
+                elif source["kind"] == "legistar":
+                    items = collect_legistar(source, seen)
                 elif source["kind"] == "email_alerts":
                     items = collect_email(source, seen)
                 else:
