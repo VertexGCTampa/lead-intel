@@ -40,15 +40,6 @@ sources:
     status: confirmed
     enabled: false  # OpenGov blocks automated scans (Cloudflare); covered by vendor email alerts
 
-  - id: plant_city_bids
-    name: City of Plant City bids
-    county: Hillsborough
-    category: bids
-    kind: listing_page
-    url: https://procurement.opengov.com/portal/plantcitygov
-    status: confirmed
-    enabled: false  # OpenGov blocks automated scans (Cloudflare); covered by vendor email alerts
-
   - id: tampa_purchasing_bids
     name: City of Tampa purchasing bids
     county: Hillsborough
@@ -71,7 +62,7 @@ sources:
   # OpenGov blocks automated scans, so Vertex is registered as a vendor and the
   # portals email bid notices to the scanner's Gmail inbox; this reads them.
   - id: opengov_email_alerts
-    name: OpenGov bid alerts (Tampa, St. Pete, Pinellas County, Pinellas Schools, Plant City)
+    name: OpenGov bid alerts (Tampa, St. Pete, Pinellas County, Pinellas Schools)
     county: Pinellas
     category: bids
     kind: email_alerts
