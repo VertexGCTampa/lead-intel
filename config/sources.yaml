@@ -3,6 +3,7 @@
 # kind:
 #   listing_page  - render the page in a browser, send its text to Claude to pull out each opportunity
 #   pdf_index     - find agenda/newsletter PDFs linked from a page, read the new ones
+#   legistar      - agenda PDFs for one board from the city's public Legistar data feed
 #   email_alerts  - read bid-alert emails in the scanner's Gmail inbox (from_filter = sender text)
 #
 # status:
@@ -49,13 +50,13 @@ sources:
     enabled: false  # OpenGov blocks automated scans (Cloudflare); covered by vendor email alerts
 
   - id: tampa_purchasing_bids
-    name: City of Tampa purchasing bid schedule
+    name: City of Tampa purchasing bids
     county: Hillsborough
     category: bids
     kind: listing_page
     url: https://tampa.gov/purchasing/info/bid-schedule
     status: confirmed
-    enabled: true
+    enabled: false  # moved to OpenGov (cityoftampa); covered by vendor email alerts
 
   - id: clearwater_bids
     name: City of Clearwater bids
@@ -70,7 +71,7 @@ sources:
   # OpenGov blocks automated scans, so Vertex is registered as a vendor and the
   # portals email bid notices to the scanner's Gmail inbox; this reads them.
   - id: opengov_email_alerts
-    name: OpenGov bid alerts (St. Pete, Pinellas County, Pinellas Schools, Plant City)
+    name: OpenGov bid alerts (Tampa, St. Pete, Pinellas County, Pinellas Schools, Plant City)
     county: Pinellas
     category: bids
     kind: email_alerts
@@ -112,7 +113,7 @@ sources:
     county: Pinellas
     category: bids
     kind: listing_page
-    url: https://Largo.com/services/financial_center/bids_and_rfps.php
+    url: https://vendors.planetbids.com/portal/84253/bo/bo-search  # moved to PlanetBids
     status: confirmed
     enabled: true
 
@@ -121,7 +122,7 @@ sources:
     county: Pinellas
     category: bids
     kind: listing_page
-    url: https://www.dunedin.gov/City-Services/Business-Development/Doing-Business-with-the-City/Project-Bids-Proposals
+    url: https://www.demandstar.com/app/agencies/florida/city-of-dunedin/procurement-opportunities/ea1bb321-8b87-4530-98ff-c28edcd50b5d
     status: confirmed
     enabled: true
 
@@ -168,7 +169,8 @@ sources:
     category: planning
     kind: pdf_index
     url: https://www.tampa.gov/development-coordination/news-and-events
-    pdf_pattern: "tampa-cares.*\\.pdf"
+    doc_page_pattern: "/document/tampa-cares-newsletter-"   # each issue has its own page that links the PDF
+    pdf_pattern: "tampa[_-]cares.*\\.pdf"
     max_new_docs: 1
     status: confirmed
     enabled: true
@@ -199,11 +201,12 @@ sources:
     name: Clearwater Community Development Board
     county: Pinellas
     category: planning
-    kind: pdf_index
-    url: https://www.myclearwater.com/communitydevelopmentboard
-    pdf_pattern: "cdb.*agenda.*\\.pdf"
+    kind: legistar
+    url: https://clearwater.legistar.com/Calendar.aspx
+    legistar_client: clearwater
+    legistar_body: Community Development Board
     max_new_docs: 2
-    status: verify  # agendas moved to Legistar in 2025; page may no longer link PDFs
+    status: confirmed
     enabled: true
 
   - id: stpete_drc
