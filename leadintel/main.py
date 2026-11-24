@@ -12,6 +12,7 @@ import yaml
 from . import dashboard, digest, store
 from .extract import extract_items
 from .fetch import Browser, chunks, find_pdf_links, pdf_text
+from .mailbox import fetch_alerts
 from .score import score_item
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -41,6 +42,17 @@ def collect_pdfs(browser: Browser, source: dict, seen: set[str]) -> list[dict]:
     return items
 
 
+def collect_email(source: dict, seen: set[str]) -> list[dict]:
+    """Bid-alert emails in the scanner's inbox (e.g. OpenGov vendor notices)."""
+    items = []
+    for alert in fetch_alerts(source["from_filter"], seen):
+        text = f"Email subject: {alert['subject']}\n\n{alert['text']}"
+        for part in chunks(text):
+            items.extend(extract_items(part, source, source["url"]))
+        seen.add(alert["id"])
+    return items
+
+
 def run(only: str | None = None) -> None:
     profile, sources = load_config()
     today = date.today().isoformat()
@@ -60,6 +72,8 @@ def run(only: str | None = None) -> None:
                     items = collect_listing(browser, source)
                 elif source["kind"] == "pdf_index":
                     items = collect_pdfs(browser, source, seen)
+                elif source["kind"] == "email_alerts":
+                    items = collect_email(source, seen)
                 else:
                     raise ValueError(f"unknown kind {source['kind']}")
                 collected.extend(items)
