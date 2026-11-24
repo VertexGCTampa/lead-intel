@@ -3,6 +3,7 @@
 # kind:
 #   listing_page  - render the page in a browser, send its text to Claude to pull out each opportunity
 #   pdf_index     - find agenda/newsletter PDFs linked from a page, read the new ones
+#   email_alerts  - read bid-alert emails in the scanner's Gmail inbox (from_filter = sender text)
 #
 # status:
 #   confirmed - URL seen on the agency's own site during research
@@ -64,6 +65,19 @@ sources:
     url: VERIFY  # OpenGov portal linked from https://www.myclearwater.com/business/bid-information
     status: verify
     enabled: false
+
+  # ---------- Bid alerts by email ----------
+  # OpenGov blocks automated scans, so Vertex is registered as a vendor and the
+  # portals email bid notices to the scanner's Gmail inbox; this reads them.
+  - id: opengov_email_alerts
+    name: OpenGov bid alerts (St. Pete, Pinellas County, Pinellas Schools, Plant City)
+    county: Pinellas
+    category: bids
+    kind: email_alerts
+    url: https://procurement.opengov.com
+    from_filter: opengov
+    status: confirmed
+    enabled: true
 
   # ---------- Bid portals: other ----------
   - id: tampa_construction_bids
