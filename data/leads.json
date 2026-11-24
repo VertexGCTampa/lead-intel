@@ -1,1 +1,1110 @@
-{}
+{
+ "2b8f840c9bf8": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": null,
+  "county": "Hillsborough",
+  "description": "Progressive Design-Build qualifications for a new administration building, a new O&M facility, two rural roadways from Citrus Park Drive, and an electrical feeder to the Fawn Ridge WTP at the NWRWRF.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": 36000000.0,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Hillsborough County upcoming procurements",
+    "stage": "rfq"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "2b8f840c9bf8",
+  "last_seen": "2026-11-24",
+  "new_construction": true,
+  "owner": "Hillsborough County Capital Projects",
+  "project_type": "other",
+  "reasons": [
+   "rfq"
+  ],
+  "reference": "CMAR-26-00410",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "hillsborough_upcoming",
+  "source_name": "Hillsborough County upcoming procurements",
+  "source_url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "sqft": null,
+  "stage": "rfq",
+  "tier": "excluded",
+  "title": "Northwest Regional Water Reclamation Facility (NWRWRF) Improvements",
+  "units": null,
+  "url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "2dc9758d82a5": {
+  "address": "602 Sparrow Avenue",
+  "applicant": "Terrie E. Ent and Justin Church",
+  "category": "planning",
+  "city": "Palm Harbor",
+  "county": "Pinellas",
+  "description": "Variance to allow a two-story detached accessory dwelling unit at 19 feet tall to remain, where an ADU may not exceed the height of the one-story, 11-foot primary dwelling.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": null,
+  "excluded_because": [
+   "not new construction"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": "2026-11-04",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Pinellas County Board of Adjustment and Appeals",
+    "stage": "variance"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "2dc9758d82a5",
+  "last_seen": "2026-11-24",
+  "new_construction": false,
+  "owner": null,
+  "project_type": "other",
+  "reasons": [
+   "variance"
+  ],
+  "reference": "VAR-26-14",
+  "score": 10,
+  "sector": "residential",
+  "single_trade": false,
+  "source_id": "pinellas_boaa",
+  "source_name": "Pinellas County Board of Adjustment and Appeals",
+  "source_url": "https://pinellas.gov/wp-content/uploads/2026/10/BOAA-Agenda_November-4-2026_ms_final_clean.pdf",
+  "sqft": null,
+  "stage": "variance",
+  "tier": "excluded",
+  "title": "VAR-26-14 Detached ADU Height Variance, 602 Sparrow Avenue",
+  "units": null,
+  "url": "https://pinellas.gov/wp-content/uploads/2026/10/BOAA-Agenda_November-4-2026_ms_final_clean.pdf",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "2dddfec01b51": {
+  "address": "28870 US Highway 19 North",
+  "applicant": "James Hamilton, DXD Capital, through Amy McPherson, Stearns, Weaver, Miller, Weissler, Alhadeff & Sitterson, P.A.",
+  "category": "planning",
+  "city": "unincorporated Clearwater",
+  "county": "Pinellas",
+  "description": "Amend the Future Land Use Map for approximately 4.82 acres from R/O/R (4.16 ac) and P (0.66 ac) to CG Commercial General (4.12 ac) and P Preservation (0.70 ac).",
+  "design_team": null,
+  "due_date": null,
+  "est_value": null,
+  "excluded_because": [],
+  "first_seen": "2026-11-24",
+  "flags": [
+   "value unknown"
+  ],
+  "hearing_date": "2026-09-09",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Pinellas County Local Planning Agency",
+    "stage": "planning"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "2dddfec01b51",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": null,
+  "project_type": "other",
+  "reasons": [
+   "planning"
+  ],
+  "reference": "FLU-26-02",
+  "score": 25,
+  "sector": "commercial",
+  "single_trade": false,
+  "source_id": "pinellas_lpa",
+  "source_name": "Pinellas County Local Planning Agency",
+  "source_url": "https://pinellas.gov/wp-content/uploads/2026/09/02.-LPA-Agenda_September-9-2026_ms_final_clean.pdf",
+  "sqft": null,
+  "stage": "planning",
+  "tier": "watch",
+  "title": "FLU-26-02 Future Land Use Map Amendment, 28870 US Highway 19 North",
+  "units": null,
+  "url": "https://pinellas.gov/wp-content/uploads/2026/09/02.-LPA-Agenda_September-9-2026_ms_final_clean.pdf",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "37053c388485": {
+  "address": "1155 Lake Avenue SE",
+  "applicant": "Brian Aungst, Jr., Macfarlane, Ferguson & McMullen, P.A.",
+  "category": "planning",
+  "city": "Largo (unincorporated)",
+  "county": "Pinellas",
+  "description": "Variance to allow construction of a carport and covered patio addition with an 8.67-foot side setback from the southern property line, where 15 feet is required in the R-A zone.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": null,
+  "excluded_because": [
+   "excluded type: addition"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": "2026-11-04",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Pinellas County Board of Adjustment and Appeals",
+    "stage": "variance"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "37053c388485",
+  "last_seen": "2026-11-24",
+  "new_construction": true,
+  "owner": "Garry Hall and Dreama Hall",
+  "project_type": "addition",
+  "reasons": [
+   "variance"
+  ],
+  "reference": "VAR-26-15",
+  "score": 10,
+  "sector": "residential",
+  "single_trade": false,
+  "source_id": "pinellas_boaa",
+  "source_name": "Pinellas County Board of Adjustment and Appeals",
+  "source_url": "https://pinellas.gov/wp-content/uploads/2026/10/BOAA-Agenda_November-4-2026_ms_final_clean.pdf",
+  "sqft": null,
+  "stage": "variance",
+  "tier": "excluded",
+  "title": "VAR-26-15 Carport and Covered Patio Side Setback Variance, 1155 Lake Avenue SE",
+  "units": null,
+  "url": "https://pinellas.gov/wp-content/uploads/2026/10/BOAA-Agenda_November-4-2026_ms_final_clean.pdf",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "49e7e720c3ec": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": null,
+  "county": "Hillsborough",
+  "description": "City of Tampa concrete services contract for Parks and Recreation, with bids opening January 5, 2027.",
+  "design_team": null,
+  "due_date": "2027-01-05",
+  "est_value": null,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "City of Tampa construction project bids",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "49e7e720c3ec",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": "City of Tampa",
+  "project_type": "service_contract",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "26-C-00048",
+  "score": 20,
+  "sector": "other",
+  "single_trade": true,
+  "source_id": "tampa_construction_bids",
+  "source_name": "City of Tampa construction project bids",
+  "source_url": "https://www.tampa.gov/contract-administration/programs/construction-project-bidding",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "Parks and Recreation Concrete Services",
+  "units": null,
+  "url": "https://www.tampa.gov/construction-bid/26-c-00048-parks-and-recreation-concrete-services",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "508ae351ecb5": {
+  "address": "North side of Robin Avenue, approx. 164 ft east of US Alternate 19",
+  "applicant": "Joanis Abrashi, Remobuild, LLC",
+  "category": "planning",
+  "city": "Palm Harbor",
+  "county": "Pinellas",
+  "description": "Rezoning of approximately 0.44 acres from C-2, General Commercial and Services, to R-2, Single-Family Residential.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": null,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": "2026-08-12",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Pinellas County Local Planning Agency",
+    "stage": "planning"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "508ae351ecb5",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": null,
+  "project_type": "other",
+  "reasons": [
+   "planning"
+  ],
+  "reference": "ZON-26-05",
+  "score": 25,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "pinellas_lpa",
+  "source_name": "Pinellas County Local Planning Agency",
+  "source_url": "https://pinellas.gov/wp-content/uploads/2026/08/LPA-Agenda_August-12-2026_ms_rvsd-fnl_7-22-26_clean.pdf",
+  "sqft": null,
+  "stage": "planning",
+  "tier": "excluded",
+  "title": "ZON-26-05 Robin Avenue Rezoning",
+  "units": null,
+  "url": "https://pinellas.gov/wp-content/uploads/2026/08/LPA-Agenda_August-12-2026_ms_rvsd-fnl_7-22-26_clean.pdf",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "621f4b3a930a": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": null,
+  "county": "Hillsborough",
+  "description": "Competitive sealed proposals for design, signed and sealed drawings, construction and engineering services for drainage improvements along about 0.71 centerline miles, funded by CDBG.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": 800000.0,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Hillsborough County upcoming procurements",
+    "stage": "rfq"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "621f4b3a930a",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": "Hillsborough County Board of County Commissioners",
+  "project_type": "site_civil",
+  "reasons": [
+   "rfq"
+  ],
+  "reference": "RPS-27-00011",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "hillsborough_upcoming",
+  "source_name": "Hillsborough County upcoming procurements",
+  "source_url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "sqft": null,
+  "stage": "rfq",
+  "tier": "excluded",
+  "title": "76th Street Drainage Improvements",
+  "units": null,
+  "url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "67b5bd58bf7f": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": null,
+  "county": "Hillsborough",
+  "description": "CMAR qualifications for a five-year program to renew, replace and install water mains, sewer mains, manholes, reclaimed water mains, force mains and related assets, including emergency repairs.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": 255000000.0,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Hillsborough County upcoming procurements",
+    "stage": "rfq"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "67b5bd58bf7f",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": "Hillsborough County Water Resources Department",
+  "project_type": "site_civil",
+  "reasons": [
+   "rfq"
+  ],
+  "reference": "CMAR-26-00430",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "hillsborough_upcoming",
+  "source_name": "Hillsborough County upcoming procurements",
+  "source_url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "sqft": null,
+  "stage": "rfq",
+  "tier": "excluded",
+  "title": "Water Resources Pipeline Renewal and Replacement Program",
+  "units": null,
+  "url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "69ae8e449800": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": null,
+  "county": "Hillsborough",
+  "description": "Bid for CDBG-DR funded roadside ditch reshaping, side-drain installation and replacement, culvert work and restoration to restore stormwater conveyance countywide.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": 2242800.0,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Hillsborough County upcoming procurements",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "69ae8e449800",
+  "last_seen": "2026-11-24",
+  "new_construction": false,
+  "owner": "Hillsborough County Engineering and Operations Department",
+  "project_type": "site_civil",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "IFB-27-00016",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "hillsborough_upcoming",
+  "source_name": "Hillsborough County upcoming procurements",
+  "source_url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "Stormwater Countywide CDBG-DR Ditch and Side-Drain Restoration Contract FY26",
+  "units": null,
+  "url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "6b0b8ce20d64": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": null,
+  "county": "Hillsborough",
+  "description": "Replacement of the Lantana-Poinsettia stormwater pumping station, with bids opening December 1, 2026; bid package includes genset, geotechnical, topographic and tree disposition reports.",
+  "design_team": null,
+  "due_date": "2026-12-01",
+  "est_value": null,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "City of Tampa construction project bids",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "6b0b8ce20d64",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": "City of Tampa",
+  "project_type": "site_civil",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "27-C-00004",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "tampa_construction_bids",
+  "source_name": "City of Tampa construction project bids",
+  "source_url": "https://www.tampa.gov/contract-administration/programs/construction-project-bidding",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "Lantana-Poinsettia Stormwater Pumping Station Replacement",
+  "units": null,
+  "url": "https://www.tampa.gov/construction-bid/27-c-00004-lantana-poinsettia-stormwater-pumping-station-replacement",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "876d3708b927": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": "Apollo Beach",
+  "county": "Hillsborough",
+  "description": "Bid to repair or replace existing underground wastewater infrastructure across several sewer sheds in Apollo Beach.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": 12129020.0,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Hillsborough County upcoming procurements",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "876d3708b927",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": "Hillsborough County Water Resources Department",
+  "project_type": "site_civil",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "IFB-27-00025",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "hillsborough_upcoming",
+  "source_name": "Hillsborough County upcoming procurements",
+  "source_url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "Apollo Beach Underground Wastewater Utilities Rehab",
+  "units": null,
+  "url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "8faa5e1a0dae": {
+  "address": "East side of US Highway 19 North at the terminus of Timberlane Road",
+  "applicant": "Trent Road, LLC, through Brian Aungst, Jr., Macfarlane, Ferguson & McMullen, P.A. (Representative)",
+  "category": "planning",
+  "city": "Palm Harbor",
+  "county": "Pinellas",
+  "description": "Rezoning of approximately 3.22 acres from RMH (2.73 ac) and R-4 (0.49 ac) to CP, Commercial Parkway, with a Development Agreement limiting use to restaurant, bar, and accessory uses supporting the principal permitted use.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": null,
+  "excluded_because": [],
+  "first_seen": "2026-11-24",
+  "flags": [
+   "value unknown"
+  ],
+  "hearing_date": "2026-08-12",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Pinellas County Local Planning Agency",
+    "stage": "planning"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "8faa5e1a0dae",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": null,
+  "project_type": "restaurant",
+  "reasons": [
+   "restaurant",
+   "planning"
+  ],
+  "reference": "ZON-25-08",
+  "score": 50,
+  "sector": "commercial",
+  "single_trade": false,
+  "source_id": "pinellas_lpa",
+  "source_name": "Pinellas County Local Planning Agency",
+  "source_url": "https://pinellas.gov/wp-content/uploads/2026/08/LPA-Agenda_August-12-2026_ms_rvsd-fnl_7-22-26_clean.pdf",
+  "sqft": null,
+  "stage": "planning",
+  "tier": "watch",
+  "title": "ZON-25-08 Timberlane Road Commercial Parkway Rezoning",
+  "units": null,
+  "url": "https://pinellas.gov/wp-content/uploads/2026/08/LPA-Agenda_August-12-2026_ms_rvsd-fnl_7-22-26_clean.pdf",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "92fabeb1d280": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": null,
+  "county": "Hillsborough",
+  "description": "Bid for a contractor to repair water mains, gravity sewer mains, manholes, reclaimed water mains, force mains and make miscellaneous repairs at water, reclaimed and wastewater facilities and pumping stations.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": 9060000.0,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Hillsborough County upcoming procurements",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "92fabeb1d280",
+  "last_seen": "2026-11-24",
+  "new_construction": false,
+  "owner": "Hillsborough County Facilities Management and Real Estate Services Department",
+  "project_type": "service_contract",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "IFB-27-00010",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "hillsborough_upcoming",
+  "source_name": "Hillsborough County upcoming procurements",
+  "source_url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "Immediate Pipeline Repair and Reconstruction (WORCS-11)",
+  "units": null,
+  "url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "934583634f5a": {
+  "address": "34106 US Highway 19 North",
+  "applicant": "Addie Mentry, AMLU Consulting",
+  "category": "planning",
+  "city": "Palm Harbor",
+  "county": "Pinellas",
+  "description": "Variance to allow 218.88 square feet of wall signage on the US Highway 19 frontage, where 150 square feet is the maximum allowed.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": null,
+  "excluded_because": [
+   "single-trade work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [
+   "value unknown"
+  ],
+  "hearing_date": "2026-11-04",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Pinellas County Board of Adjustment and Appeals",
+    "stage": "variance"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "934583634f5a",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": "Tarpon Springs Hospital Foundation, Inc.",
+  "project_type": "other",
+  "reasons": [
+   "variance"
+  ],
+  "reference": "VAR-26-18",
+  "score": 10,
+  "sector": "commercial",
+  "single_trade": true,
+  "source_id": "pinellas_boaa",
+  "source_name": "Pinellas County Board of Adjustment and Appeals",
+  "source_url": "https://pinellas.gov/wp-content/uploads/2026/10/BOAA-Agenda_November-4-2026_ms_final_clean.pdf",
+  "sqft": null,
+  "stage": "variance",
+  "tier": "excluded",
+  "title": "VAR-26-18 Hospital Wall Signage Variance, 34106 US Highway 19 North",
+  "units": null,
+  "url": "https://pinellas.gov/wp-content/uploads/2026/10/BOAA-Agenda_November-4-2026_ms_final_clean.pdf",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "b1410e4afde5": {
+  "address": "28870 US Highway 19 North",
+  "applicant": "DXD Capital, through Amy McPherson, Stearns, Weaver, Miller, Weissler, Alhadeff & Sitterson, P.A.",
+  "category": "planning",
+  "city": "unincorporated Clearwater",
+  "county": "Pinellas",
+  "description": "Development Agreement on approximately 4.82 acres limiting the buildable area, capping impervious surface ratio at 0.70, and requiring a conservation easement on non-buildable areas.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": null,
+  "excluded_because": [],
+  "first_seen": "2026-11-24",
+  "flags": [
+   "value unknown"
+  ],
+  "hearing_date": "2026-09-09",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Pinellas County Local Planning Agency",
+    "stage": "planning"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "b1410e4afde5",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": null,
+  "project_type": "other",
+  "reasons": [
+   "planning"
+  ],
+  "reference": "DVA-26-02",
+  "score": 25,
+  "sector": "commercial",
+  "single_trade": false,
+  "source_id": "pinellas_lpa",
+  "source_name": "Pinellas County Local Planning Agency",
+  "source_url": "https://pinellas.gov/wp-content/uploads/2026/09/02.-LPA-Agenda_September-9-2026_ms_final_clean.pdf",
+  "sqft": null,
+  "stage": "planning",
+  "tier": "watch",
+  "title": "DVA-26-02 Development Agreement, 28870 US Highway 19 North",
+  "units": null,
+  "url": "https://pinellas.gov/wp-content/uploads/2026/09/02.-LPA-Agenda_September-9-2026_ms_final_clean.pdf",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "b19ee0c6ee58": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": null,
+  "county": "Hillsborough",
+  "description": "Competitive sealed bids for complex industrial repairs, rehabilitation and related works at various Water Resources Department facilities.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": 9015000.0,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Hillsborough County upcoming procurements",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "b19ee0c6ee58",
+  "last_seen": "2026-11-24",
+  "new_construction": false,
+  "owner": "Hillsborough County Board of County Commissioners",
+  "project_type": "renovation",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "IFB-27-00001",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "hillsborough_upcoming",
+  "source_name": "Hillsborough County upcoming procurements",
+  "source_url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "Water and Wastewater Facilities Repair and Renovations (R3M)",
+  "units": null,
+  "url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "ce81b28a4260": {
+  "address": "East side of US Highway 19 North at the terminus of Timberlane Road",
+  "applicant": "Trent Road, LLC, through Brian Aungst, Jr., Macfarlane, Ferguson & McMullen, P.A. (Representative)",
+  "category": "planning",
+  "city": "Palm Harbor",
+  "county": "Pinellas",
+  "description": "Future Land Use Map amendment of approximately 3.22 acres from RLM, Residential Low Medium, to R/O/R, Residential/Office/Retail.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": null,
+  "excluded_because": [],
+  "first_seen": "2026-11-24",
+  "flags": [
+   "value unknown"
+  ],
+  "hearing_date": "2026-08-12",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Pinellas County Local Planning Agency",
+    "stage": "planning"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "ce81b28a4260",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": null,
+  "project_type": "other",
+  "reasons": [
+   "planning"
+  ],
+  "reference": "FLU-25-10",
+  "score": 25,
+  "sector": "commercial",
+  "single_trade": false,
+  "source_id": "pinellas_lpa",
+  "source_name": "Pinellas County Local Planning Agency",
+  "source_url": "https://pinellas.gov/wp-content/uploads/2026/08/LPA-Agenda_August-12-2026_ms_rvsd-fnl_7-22-26_clean.pdf",
+  "sqft": null,
+  "stage": "planning",
+  "tier": "watch",
+  "title": "FLU-25-10 Timberlane Road Future Land Use Map Amendment",
+  "units": null,
+  "url": "https://pinellas.gov/wp-content/uploads/2026/08/LPA-Agenda_August-12-2026_ms_rvsd-fnl_7-22-26_clean.pdf",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "d142969cc3ac": {
+  "address": "12001 84th Avenue North",
+  "applicant": "Meghan McGuire, Studio M DeZign, LLC",
+  "category": "planning",
+  "city": "Seminole (unincorporated)",
+  "county": "Pinellas",
+  "description": "Variance to allow an after-the-fact bedroom conversion to remain with a 3-foot side setback from the northern property line, where 6 feet is required in the R-3 zone.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": null,
+  "excluded_because": [
+   "excluded type: renovation",
+   "not new construction"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": "2026-11-04",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Pinellas County Board of Adjustment and Appeals",
+    "stage": "variance"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "d142969cc3ac",
+  "last_seen": "2026-11-24",
+  "new_construction": false,
+  "owner": "William Chatt, Tre. and Grazina Chatt, Tre.",
+  "project_type": "renovation",
+  "reasons": [
+   "variance"
+  ],
+  "reference": "VAR-26-17",
+  "score": 10,
+  "sector": "residential",
+  "single_trade": false,
+  "source_id": "pinellas_boaa",
+  "source_name": "Pinellas County Board of Adjustment and Appeals",
+  "source_url": "https://pinellas.gov/wp-content/uploads/2026/10/BOAA-Agenda_November-4-2026_ms_final_clean.pdf",
+  "sqft": null,
+  "stage": "variance",
+  "tier": "excluded",
+  "title": "VAR-26-17 After-the-Fact Bedroom Conversion Setback Variance, 12001 84th Avenue North",
+  "units": null,
+  "url": "https://pinellas.gov/wp-content/uploads/2026/10/BOAA-Agenda_November-4-2026_ms_final_clean.pdf",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "dc75e723865a": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": null,
+  "county": "Hillsborough",
+  "description": "City of Tampa sidewalk grinding services for FY27, with bids opening January 5, 2027.",
+  "design_team": null,
+  "due_date": "2027-01-05",
+  "est_value": null,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "City of Tampa construction project bids",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "dc75e723865a",
+  "last_seen": "2026-11-24",
+  "new_construction": false,
+  "owner": "City of Tampa",
+  "project_type": "service_contract",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "26-C-00045",
+  "score": 20,
+  "sector": "other",
+  "single_trade": true,
+  "source_id": "tampa_construction_bids",
+  "source_name": "City of Tampa construction project bids",
+  "source_url": "https://www.tampa.gov/contract-administration/programs/construction-project-bidding",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "Sidewalk Grinding FY27",
+  "units": null,
+  "url": "https://www.tampa.gov/construction-bid/26-c-00045-sidewalk-grinding-fy27",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "dcc320b81d09": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": null,
+  "county": "Hillsborough",
+  "description": "Citywide repair of wastewater collection systems for FY27, with bids opening December 1, 2026.",
+  "design_team": null,
+  "due_date": "2026-12-01",
+  "est_value": null,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "City of Tampa construction project bids",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "dcc320b81d09",
+  "last_seen": "2026-11-24",
+  "new_construction": false,
+  "owner": "City of Tampa",
+  "project_type": "site_civil",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "27-C-00001",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "tampa_construction_bids",
+  "source_name": "City of Tampa construction project bids",
+  "source_url": "https://www.tampa.gov/contract-administration/programs/construction-project-bidding",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "Citywide Wastewater Collection Systems Repair - FY27",
+  "units": null,
+  "url": "https://www.tampa.gov/construction-bid/27-c-00001-citywide-wastewater-collection-systems-repair-fy27",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "f464a41eec2e": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": null,
+  "county": "Hillsborough",
+  "description": "CMAR qualifications for preconstruction and construction of new construction and rehabilitation at the central wastewater facility, including lift stations, storage tanks, ponds, stormwater systems, demolition, electrical and underground utilities.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": 155000000.0,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Hillsborough County upcoming procurements",
+    "stage": "rfq"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "f464a41eec2e",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": "Hillsborough County Water Resources Department",
+  "project_type": "other",
+  "reasons": [
+   "rfq"
+  ],
+  "reference": "CMAR-26-00409",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "hillsborough_upcoming",
+  "source_name": "Hillsborough County upcoming procurements",
+  "source_url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "sqft": null,
+  "stage": "rfq",
+  "tier": "excluded",
+  "title": "Central Wastewater Treatment Improvements Project",
+  "units": null,
+  "url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "f69edf4efe6f": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": null,
+  "county": "Hillsborough",
+  "description": "Resiliency and reliability improvements to pump stations under Contract A, including Curiosity Creek and Donut Pond, with bids opening November 24, 2026.",
+  "design_team": null,
+  "due_date": "2026-11-24",
+  "est_value": null,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "City of Tampa construction project bids",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "f69edf4efe6f",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": "City of Tampa",
+  "project_type": "site_civil",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "26-C-00038",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "tampa_construction_bids",
+  "source_name": "City of Tampa construction project bids",
+  "source_url": "https://www.tampa.gov/contract-administration/programs/construction-project-bidding",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "Pump Station Resiliency and Reliability Improvements Contract A",
+  "units": null,
+  "url": "https://www.tampa.gov/construction-bid/26-c-00038-pump-station-resiliency-and-reliability-improvements-contract",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "fe01a205b83b": {
+  "address": "14067 81st Avenue North",
+  "applicant": "Joseph Phillips, Gulf Coast Grill Center, Inc.",
+  "category": "planning",
+  "city": "Seminole",
+  "county": "Pinellas",
+  "description": "Variance request to build a 120-square-foot pergola with a 7-foot rear setback where 10 feet is required and a 2-foot side setback where 6 feet is required, on R-3 zoned residential property.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": 15000,
+  "excluded_because": [
+   "excluded type: addition"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": "2026-12-02",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Pinellas County Board of Adjustment and Appeals",
+    "stage": "variance"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "fe01a205b83b",
+  "last_seen": "2026-11-24",
+  "new_construction": true,
+  "owner": "Barbara Tindle",
+  "project_type": "addition",
+  "reasons": [
+   "variance"
+  ],
+  "reference": "VAR-26-19",
+  "score": 10,
+  "sector": "residential",
+  "single_trade": false,
+  "source_id": "pinellas_boaa",
+  "source_name": "Pinellas County Board of Adjustment and Appeals",
+  "source_url": "https://pinellas.gov/wp-content/uploads/2026/11/BOAA-Agenda_December-2-2026_ms_final.pdf",
+  "sqft": 120,
+  "stage": "variance",
+  "tier": "excluded",
+  "title": "Pergola variance, 14067 81st Avenue North",
+  "units": null,
+  "url": "https://pinellas.gov/wp-content/uploads/2026/11/BOAA-Agenda_December-2-2026_ms_final.pdf",
+  "value_is_estimate": true,
+  "zip": null
+ }
+}
