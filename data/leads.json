@@ -93,6 +93,54 @@
   "value_is_estimate": false,
   "zip": null
  },
+ "2a4f437f418b": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": "Dunedin",
+  "county": "Pinellas",
+  "description": "Re-roofing of the Fleet, Fleet PCSO, and Solid Waste buildings, rebid per City of Dunedin invitation to bid.",
+  "design_team": null,
+  "due_date": "2026-11-30",
+  "est_value": null,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "City of Dunedin bids",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "2a4f437f418b",
+  "last_seen": "2026-11-24",
+  "new_construction": false,
+  "owner": "City of Dunedin",
+  "project_type": "renovation",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "ITB-26-2616-2-0-2026/TWS",
+  "score": 20,
+  "sector": "other",
+  "single_trade": true,
+  "source_id": "dunedin_bids",
+  "source_name": "City of Dunedin bids",
+  "source_url": "https://www.demandstar.com/app/agencies/florida/city-of-dunedin/procurement-opportunities/ea1bb321-8b87-4530-98ff-c28edcd50b5d",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "Re-Roofing Project Fleet, Fleet PCSO, and Solid Waste (Rebid)",
+  "units": null,
+  "url": "https://www.demandstar.com/app/limited/bids/555785/details",
+  "value_is_estimate": false,
+  "zip": null
+ },
  "2b8f840c9bf8": {
   "address": null,
   "applicant": null,
@@ -429,6 +477,54 @@
   "value_is_estimate": false,
   "zip": null
  },
+ "5df7af69b10f": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": "Dunedin",
+  "county": "Pinellas",
+  "description": "Repair of gabion retaining or stabilization structures at Jerry Branch, per City of Dunedin invitation to bid.",
+  "design_team": null,
+  "due_date": "2026-12-29",
+  "est_value": null,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "City of Dunedin bids",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "5df7af69b10f",
+  "last_seen": "2026-11-24",
+  "new_construction": false,
+  "owner": "City of Dunedin",
+  "project_type": "site_civil",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "ITB-26-2631-0-2027/TRW",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "dunedin_bids",
+  "source_name": "City of Dunedin bids",
+  "source_url": "https://www.demandstar.com/app/agencies/florida/city-of-dunedin/procurement-opportunities/ea1bb321-8b87-4530-98ff-c28edcd50b5d",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "Jerry Branch Gabion Repair",
+  "units": null,
+  "url": "https://www.demandstar.com/app/limited/bids/558301/details",
+  "value_is_estimate": false,
+  "zip": null
+ },
  "621f4b3a930a": {
   "address": null,
   "applicant": null,
@@ -618,6 +714,54 @@
   "title": "Lantana-Poinsettia Stormwater Pumping Station Replacement",
   "units": null,
   "url": "https://www.tampa.gov/construction-bid/27-c-00004-lantana-poinsettia-stormwater-pumping-station-replacement",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "83fb5fbb9c6b": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": "Dunedin",
+  "county": "Pinellas",
+  "description": "LED lighting retrofit at the Dunedin library, per City of Dunedin invitation to bid.",
+  "design_team": null,
+  "due_date": "2026-12-07",
+  "est_value": null,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "City of Dunedin bids",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "83fb5fbb9c6b",
+  "last_seen": "2026-11-24",
+  "new_construction": false,
+  "owner": "City of Dunedin",
+  "project_type": "municipal_building",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "ITB-26-2629-0-2026/TWS",
+  "score": 20,
+  "sector": "other",
+  "single_trade": true,
+  "source_id": "dunedin_bids",
+  "source_name": "City of Dunedin bids",
+  "source_url": "https://www.demandstar.com/app/agencies/florida/city-of-dunedin/procurement-opportunities/ea1bb321-8b87-4530-98ff-c28edcd50b5d",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "Library LED Retrofit",
+  "units": null,
+  "url": "https://www.demandstar.com/app/limited/bids/556505/details",
   "value_is_estimate": false,
   "zip": null
  },
