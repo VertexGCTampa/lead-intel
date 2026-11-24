@@ -34,8 +34,15 @@ class Browser:
         """Return the visible text and all links of a fully rendered page."""
         page = self._context.new_page()
         try:
-            page.goto(url, wait_until="networkidle", timeout=60_000)
-            page.wait_for_timeout(wait_ms)  # portals like OpenGov load listings after idle
+            # Portals like OpenGov keep background requests open forever, so
+            # "networkidle" can never fire. Load the page, give the network a
+            # short chance to settle, then wait for listings to render.
+            page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+            try:
+                page.wait_for_load_state("networkidle", timeout=15_000)
+            except Exception:
+                pass  # still-busy pages are fine; we wait below either way
+            page.wait_for_timeout(wait_ms)
             text = page.inner_text("body")
             links = page.eval_on_selector_all(
                 "a[href]", "els => els.map(e => ({text: e.innerText.trim(), href: e.href}))"
