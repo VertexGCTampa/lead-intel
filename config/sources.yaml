@@ -18,7 +18,7 @@ sources:
     kind: listing_page
     url: https://procurement.opengov.com/portal/stpete
     status: confirmed
-    enabled: true
+    enabled: false  # OpenGov blocks automated scans (Cloudflare); covered by vendor email alerts
 
   - id: pinellas_county_bids
     name: Pinellas County bids
@@ -27,7 +27,7 @@ sources:
     kind: listing_page
     url: https://secure.procurenow.com/portal/pinellasfl
     status: confirmed
-    enabled: true
+    enabled: false  # OpenGov blocks automated scans (Cloudflare); covered by vendor email alerts
 
   - id: pinellas_schools_bids
     name: Pinellas County Schools bids
@@ -36,7 +36,7 @@ sources:
     kind: listing_page
     url: https://procurement.opengov.com/portal/pcsb
     status: confirmed
-    enabled: true
+    enabled: false  # OpenGov blocks automated scans (Cloudflare); covered by vendor email alerts
 
   - id: plant_city_bids
     name: City of Plant City bids
@@ -45,7 +45,7 @@ sources:
     kind: listing_page
     url: https://procurement.opengov.com/portal/plantcitygov
     status: confirmed
-    enabled: true
+    enabled: false  # OpenGov blocks automated scans (Cloudflare); covered by vendor email alerts
 
   - id: tampa_purchasing_bids
     name: City of Tampa purchasing bid schedule
