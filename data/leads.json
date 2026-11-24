@@ -1,4 +1,98 @@
 {
+ "07db36b2a89a": {
+  "address": "2448 Nursery Road",
+  "applicant": null,
+  "category": "planning",
+  "city": "Clearwater",
+  "county": "Pinellas",
+  "description": "Amendment to the city's Future Land Use Map changing 2448 Nursery Road from Residential Urban (RU) to Residential Medium (RM), listed on the consent agenda as uncontested.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": null,
+  "excluded_because": [],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": "2026-10-20",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Clearwater Community Development Board",
+    "stage": "planning"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "07db36b2a89a",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": null,
+  "project_type": "other",
+  "reasons": [
+   "planning"
+  ],
+  "reference": "LUP2026-07002",
+  "score": 25,
+  "sector": "residential",
+  "single_trade": false,
+  "source_id": "clearwater_cdb",
+  "source_name": "Clearwater Community Development Board",
+  "source_url": "https://legistar2.granicus.com/clearwater/meetings/2026/10/3226_A_Community_Development_Board_26-10-20_Meeting_Agenda.pdf",
+  "sqft": null,
+  "stage": "planning",
+  "tier": "low",
+  "title": "LUP2026-07002 Future Land Use Map Amendment, 2448 Nursery Road",
+  "units": null,
+  "url": "https://legistar2.granicus.com/clearwater/meetings/2026/10/3226_A_Community_Development_Board_26-10-20_Meeting_Agenda.pdf",
+  "value_is_estimate": false,
+  "zip": null
+ },
+ "150dc52926ff": {
+  "address": "1591 Gulf Boulevard",
+  "applicant": null,
+  "category": "planning",
+  "city": "Clearwater",
+  "county": "Pinellas",
+  "description": "Flexible Development approval for an existing 2,115 sq ft commercial dock with a new boat lift, accessory to 64 attached dwellings in the HDR and P Districts.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": null,
+  "excluded_because": [],
+  "first_seen": "2026-11-24",
+  "flags": [
+   "value unknown"
+  ],
+  "hearing_date": "2026-11-19",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Clearwater Community Development Board",
+    "stage": "planning"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "150dc52926ff",
+  "last_seen": "2026-11-24",
+  "new_construction": false,
+  "owner": null,
+  "project_type": "other",
+  "reasons": [
+   "planning"
+  ],
+  "reference": "FLD2026-08016",
+  "score": 25,
+  "sector": "commercial",
+  "single_trade": false,
+  "source_id": "clearwater_cdb",
+  "source_name": "Clearwater Community Development Board",
+  "source_url": "https://legistar2.granicus.com/clearwater/meetings/2026/11/3227_A_Community_Development_Board_26-11-19_Meeting_Agenda.pdf",
+  "sqft": 2115,
+  "stage": "planning",
+  "tier": "watch",
+  "title": "FLD2026-08016 Commercial Dock and Boat Lift, 1591 Gulf Boulevard",
+  "units": null,
+  "url": "https://legistar2.granicus.com/clearwater/meetings/2026/11/3227_A_Community_Development_Board_26-11-19_Meeting_Agenda.pdf",
+  "value_is_estimate": false,
+  "zip": null
+ },
  "2b8f840c9bf8": {
   "address": null,
   "applicant": null,
@@ -672,6 +766,54 @@
   "units": null,
   "url": "https://pinellas.gov/wp-content/uploads/2026/10/BOAA-Agenda_November-4-2026_ms_final_clean.pdf",
   "value_is_estimate": false,
+  "zip": null
+ },
+ "941ac8623707": {
+  "address": "601 N. Old Coachman Road",
+  "applicant": null,
+  "category": "planning",
+  "city": "Clearwater",
+  "county": "Pinellas",
+  "description": "Flexible Development approval for a 40,000 sq ft governmental use addition to BayCare Ballpark, not exceeding 55 feet in height, with 375 off-street parking spaces, as a Comprehensive Infill Redevelopment Project.",
+  "design_team": null,
+  "due_date": null,
+  "est_value": 12000000,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": "2026-11-19",
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "Clearwater Community Development Board",
+    "stage": "planning"
+   }
+  ],
+  "is_public_bid": false,
+  "key": "941ac8623707",
+  "last_seen": "2026-11-24",
+  "new_construction": false,
+  "owner": null,
+  "project_type": "addition",
+  "reasons": [
+   "planning"
+  ],
+  "reference": "FLD2026-09017",
+  "score": 25,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "clearwater_cdb",
+  "source_name": "Clearwater Community Development Board",
+  "source_url": "https://legistar2.granicus.com/clearwater/meetings/2026/11/3227_A_Community_Development_Board_26-11-19_Meeting_Agenda.pdf",
+  "sqft": 40000,
+  "stage": "planning",
+  "tier": "excluded",
+  "title": "FLD2026-09017 BayCare Ballpark 40,000 SF Addition",
+  "units": null,
+  "url": "https://legistar2.granicus.com/clearwater/meetings/2026/11/3227_A_Community_Development_Board_26-11-19_Meeting_Agenda.pdf",
+  "value_is_estimate": true,
   "zip": null
  },
  "b1410e4afde5": {
