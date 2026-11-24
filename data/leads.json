@@ -285,6 +285,54 @@
   "value_is_estimate": false,
   "zip": null
  },
+ "3753587ec2ab": {
+  "address": null,
+  "applicant": null,
+  "category": "bids",
+  "city": "Largo",
+  "county": "Pinellas",
+  "description": "City of Largo is soliciting bids for NELAC certified analytical services.",
+  "design_team": null,
+  "due_date": "2026-12-07",
+  "est_value": null,
+  "excluded_because": [
+   "not commercial or residential building work"
+  ],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "City of Largo bids",
+    "stage": "bid_open"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "3753587ec2ab",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": "City of Largo",
+  "project_type": "service_contract",
+  "reasons": [
+   "bid open"
+  ],
+  "reference": "27-P-873",
+  "score": 20,
+  "sector": "other",
+  "single_trade": false,
+  "source_id": "largo_bids",
+  "source_name": "City of Largo bids",
+  "source_url": "https://vendors.planetbids.com/portal/84253/bo/bo-search",
+  "sqft": null,
+  "stage": "bid_open",
+  "tier": "excluded",
+  "title": "NELAC Certified Analytical Services",
+  "units": null,
+  "url": "https://vendors.planetbids.com/portal/84253/bo/bo-search",
+  "value_is_estimate": false,
+  "zip": null
+ },
  "49e7e720c3ec": {
   "address": null,
   "applicant": null,
@@ -1152,6 +1200,52 @@
   "url": "https://hcfl.gov/businesses/doing-business-with-hillsborough/vendors/notice-of-select-upcoming-procurements",
   "value_is_estimate": false,
   "zip": null
+ },
+ "f5f53df57925": {
+  "address": "2660 Adrian Avenue",
+  "applicant": null,
+  "category": "bids",
+  "city": "Largo",
+  "county": "Pinellas",
+  "description": "City of Largo is soliciting qualifications for the disposition of a residential lot at 2660 Adrian Avenue for affordable housing.",
+  "design_team": null,
+  "due_date": "2027-01-04",
+  "est_value": null,
+  "excluded_because": [],
+  "first_seen": "2026-11-24",
+  "flags": [],
+  "hearing_date": null,
+  "history": [
+   {
+    "date": "2026-11-24",
+    "source": "City of Largo bids",
+    "stage": "lot_sale"
+   }
+  ],
+  "is_public_bid": true,
+  "key": "f5f53df57925",
+  "last_seen": "2026-11-24",
+  "new_construction": null,
+  "owner": "City of Largo",
+  "project_type": "other",
+  "reasons": [
+   "lot sale"
+  ],
+  "reference": "27-Q-879",
+  "score": 20,
+  "sector": "residential",
+  "single_trade": false,
+  "source_id": "largo_bids",
+  "source_name": "City of Largo bids",
+  "source_url": "https://vendors.planetbids.com/portal/84253/bo/bo-search",
+  "sqft": null,
+  "stage": "lot_sale",
+  "tier": "low",
+  "title": "Affordable Housing Residential Lot Disposition: 2660 Adrian Avenue",
+  "units": null,
+  "url": "https://vendors.planetbids.com/portal/84253/bo/bo-search",
+  "value_is_estimate": false,
+  "zip": "33774"
  },
  "f69edf4efe6f": {
   "address": null,
